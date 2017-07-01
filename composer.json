@@ -1,0 +1,21 @@
+{
+  "name": "echron/xmlmapper",
+  "description": "",
+  "authors": [
+    {
+      "name": "Stijn Duynslaeger",
+      "email": "stijn@echron.be"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Echron\\XmlMapper\\": "src/"
+    }
+  }
+}
