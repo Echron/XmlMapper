@@ -6,24 +6,15 @@ class MapperTest extends \PHPUnit\Framework\TestCase
     {
 
         //Definitions
-        $artikel = new \Echron\XmlMapper\Definition\Base('Artikel');
+        $level1 = new \Echron\XmlMapper\Definition\Base('Level1');
 
-        $artCode = new \Echron\XmlMapper\Definition\Base('ArtCode');
-        $artikel->addChild($artCode);
+        $fieldA = new \Echron\XmlMapper\Definition\Base('FieldA');
+        $level1->addChild($fieldA);
 
-        $artCode = new \Echron\XmlMapper\Definition\Base('ArtNummer');
-        $artikel->addChild($artCode);
+        $fieldB = new \Echron\XmlMapper\Definition\Base('FieldB');
+        $level1->addChild($fieldB);
 
-        $artCode = new \Echron\XmlMapper\Definition\Base('VolgNummer');
-        $artikel->addChild($artCode);
-
-        $artCode = new \Echron\XmlMapper\Definition\Base('Groep');
-        $artikel->addChild($artCode);
-
-        $artCode = new \Echron\XmlMapper\Definition\Base('Soort');
-        $artikel->addChild($artCode);
-
-        $mapper = new \Echron\XmlMapper\Mapper($artikel);
+        $mapper = new \Echron\XmlMapper\Mapper($level1);
 
         $data = $mapper->process(file_get_contents(realpath(__DIR__) . '/assets/test1.xml'));
 

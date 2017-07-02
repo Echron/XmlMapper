@@ -1,7 +1,4 @@
-<Artikel>
-    <ArtCode>1537</ArtCode>
-    <ArtNummer>WANDOPB_001550</ArtNummer>
-    <VolgNummer>001550</VolgNummer>
-    <Groep>WAND</Groep>
-    <Soort>OPB_</Soort>
-</Artikel>
+<Level1>
+    <FieldA>ValueA</FieldA>
+    <FieldB>ValueB</FieldB>
+</Level1>

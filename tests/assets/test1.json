@@ -1,9 +1,6 @@
 {
-  "Artikel": {
-    "ArtCode": "1537",
-    "ArtNummer": "WANDOPB_001550",
-    "VolgNummer": "001550",
-    "Groep": "WAND",
-    "Soort": "OPB_"
+  "Level1": {
+    "FieldA": "ValueA",
+    "FieldB": "ValueB"
   }
 }
